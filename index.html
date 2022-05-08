@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- header/navigation -->
-    <div>
+    <header>
         <h1>J. Bradley Whittington</h1>
         <nav>
             <ul>
@@ -24,24 +25,36 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
 
     <!-- about me -->
-    <section id="about-me">
-        <img src="./assets/images/impressionist-muir-woods.png" alt="An impressionist styled selfie taken in Muir Woods">
-        <article>
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus pariatur voluptas quae error est optio expedita! Accusantium at blanditiis sequi iste eligendi! Rerum, mollitia. Nostrum impedit natus quod incidunt.</p>
-        </article>
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <img src="./assets/images/impressionist-muir-woods.png" alt="An impressionist styled selfie taken in Muir Woods" class="image">
+            <h2 class="heading">About me.</h2>
+            <p class="paragraph">quos, facilis molestiae commodi fugit earum repellat quo dicta doloremque ipsum dolorem corrupti repellendus aut pariatur!</p>
+        </div>
     </section>
 
     <!-- my work -->
-    <section id="my-work">
+    <section id="my-work" class="my-work">
         <h2>My Work</h2>
-        <img src="./assets/images/horiseon-screenshot.png" alt="Homepage of Horiseon, J. Bradley Whittington's first website">
-        <img src="./assets/images/placeholder-1.jpg" alt="Manicured hands with colorful nail art">
-        <img src="./assets/images/placeholder-2.jpg" alt="An X-MEN comic book being selected from a box of comics">
-        <img src="./assets/images/placeholder-3.jpg" alt="Classical musicians in rehearsal">
+            <div class="first-project">
+                <img src="./assets/images/horiseon-screenshot.png" alt="Homepage of Horiseon, J. Bradley Whittington's first website">
+                <h3>Horiseon</h3>
+            </div>    
+            <div>    
+                <img src="./assets/images/placeholder-1.jpg" alt="Manicured hands with colorful nail art">
+                <h3>Placeholder 1</h3>
+            </div>    
+            <div>    
+                <img src="./assets/images/placeholder-2.jpg" alt="An X-MEN comic book being selected from a box of comics">
+                <h3>Placeholder 3</h3>
+            </div>    
+            <div>    
+                <img src="./assets/images/placeholder-3.jpg" alt="Classical musicians in rehearsal">
+                <h3>Placeholder 4</h3>
+            </div>
     </section>
 
     <!-- contact me -->

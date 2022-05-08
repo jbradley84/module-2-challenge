@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #1c1c2e;
+    --secondary-color: #386486;
+    --tertiary-color: #8ec2c2;
+    --quaternary-color: #d3d895;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER/NAV BAR BEGIN */
+header {
+    padding: 20px 35px;
+    margin-bottom: 10px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    font-size: 32px;
+    color: var(--secondary-color)
+}
+/* HEADER/NAV BAR END */
+
+
+/* ABOUT ME BEGIN */
+.about-me {
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 50px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    border: 2px solid var(--secondary-color);
+    height: 300px;
+}
+
+.heading {
+    border: 2px solid var(--secondary-color);
+}
+
+.paragraph {
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ABOUT ME END */
+
+/* MY WORK BEGIN */
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+/* MY WORK END */
+
+/* CONTACT ME BEGIN */
+/* CONTACT ME END */
+
+/* UTILITY */
+img {
+    max-width: 400px;
+}

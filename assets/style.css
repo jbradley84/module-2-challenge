@@ -24,10 +24,11 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 header a {
@@ -37,14 +38,14 @@ header a {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
 
 header nav ul li a {
-    padding: 10px 20px;
-    font-size: 32px;
+    padding: 10px 15px;
+    font-size: 28px;
     color: var(--secondary-color)
 }
 /* HEADER/NAV BAR END */
@@ -53,24 +54,25 @@ header nav ul li a {
 /* ABOUT ME BEGIN */
 .about-me {
     border: 2px solid var(--secondary-color);
-    margin-bottom: 50px;
-    height: 320px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
     border: 2px solid var(--secondary-color);
-    height: 300px;
+    max-height: 400px;
+    padding: 10px;
 }
 
 .heading {
     border: 2px solid var(--secondary-color);
+    font-size: 32px;
 }
 
 .paragraph {

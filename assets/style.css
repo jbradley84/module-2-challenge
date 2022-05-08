@@ -92,7 +92,7 @@ header nav ul li a {
 /* ABOUT ME END */
 
 /* MY WORK BEGIN */
-.my-work {
+.my-work div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,18 +105,20 @@ header nav ul li a {
 
 .my-work h2 {
     font-size: 32px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .project {
     margin-bottom: 10px;
+    position: relative;
 }
 
 .project-name {
-    font-size: 28px;
-    font-weight: lighter;
-    text-align: center;
+    background-color: var(--secondary-color);
+    position: absolute;
+}
+
+.project-name h3 {
+    
 }
 
 

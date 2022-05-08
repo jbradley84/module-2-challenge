@@ -55,7 +55,6 @@ header nav ul li a {
 
 /* ABOUT ME BEGIN */
 .about-me {
-    border: 2px solid var(--secondary-color);
     margin-bottom: 10px;
     background-color: var(--tertiary-color);
 }
@@ -68,20 +67,22 @@ header nav ul li a {
 }
 
 .image {
-    border: 2px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
     max-height: 400px;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 .heading {
-    border: 2px solid var(--secondary-color);
     font-size: 32px;
 }
 
 .paragraph {
-    border: 2px solid var(--secondary-color);
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    padding: 0, 20px, 10px, 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /* ABOUT ME END */
 
@@ -91,7 +92,6 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--primary-color);
     margin-bottom: 10px;
     background-image: url(./images/low-poly-grid-haikei.png);
     background-repeat: no-repeat;
@@ -100,6 +100,14 @@ header nav ul li a {
 /* MY WORK END */
 
 /* CONTACT ME BEGIN */
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+}
 /* CONTACT ME END */
 
 /* UTILITY */

@@ -15,18 +15,23 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 /* HEADER/NAV BAR BEGIN */
 header {
     padding: 20px 35px;
     margin-bottom: 10px;
-    background-image: url(./images/blurry-gradient-haikei.png);
+    background-image: url(./images/low-poly-grid-haikei.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 header h1 {
@@ -54,35 +59,35 @@ header nav ul li a {
 
 
 /* ABOUT ME BEGIN */
-.about-me {
+.about-me div {
     margin-bottom: 10px;
     background-color: var(--tertiary-color);
-}
-
-.container {
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
-.image {
-    border: 3px solid var(--secondary-color);
-    max-height: 400px;
-    margin-top: 10px;
+.about-me img {
+    flex: 1;
 }
+
+.about-me div {
+    flex: 1;
+}
+
 
 .heading {
     font-size: 32px;
+    padding: 0, 20px, 10px, 20px;
 }
 
 .paragraph {
-    display: flex;
-    text-align: center;
-    padding: 0, 20px, 10px, 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 /* ABOUT ME END */
 
@@ -93,10 +98,28 @@ header nav ul li a {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    background-image: url(./images/low-poly-grid-haikei.png);
+    background-image: url(./images/blurry-gradient-haikei.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.my-work h2 {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 10px;
+}
+
+.project-name {
+    font-size: 28px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
 /* MY WORK END */
 
 /* CONTACT ME BEGIN */
@@ -113,4 +136,5 @@ header nav ul li a {
 /* UTILITY */
 img {
     max-width: 400px;
+    border: 3px solid var(--secondary-color);
 }

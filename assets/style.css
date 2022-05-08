@@ -19,7 +19,9 @@ body {
 header {
     padding: 20px 35px;
     margin-bottom: 10px;
-    background-color: var(--tertiary-color);
+    background-image: url(./images/blurry-gradient-haikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
@@ -54,7 +56,8 @@ header nav ul li a {
 /* ABOUT ME BEGIN */
 .about-me {
     border: 2px solid var(--secondary-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: var(--tertiary-color);
 }
 
 .container {
@@ -86,8 +89,13 @@ header nav ul li a {
 .my-work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border: 2px solid var(--primary-color);
     margin-bottom: 10px;
+    background-image: url(./images/low-poly-grid-haikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* MY WORK END */
 

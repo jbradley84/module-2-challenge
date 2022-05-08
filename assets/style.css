@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1500px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -71,6 +71,7 @@ header nav ul li a {
 
 .about-me img {
     flex: 1;
+    max-width: 400px;
 }
 
 .about-me div {
@@ -92,15 +93,19 @@ header nav ul li a {
 /* ABOUT ME END */
 
 /* MY WORK BEGIN */
+.my-work {
+    padding: 15px;
+    background-image: url(./images/blurry-gradient-haikei.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .my-work div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    background-image: url(./images/blurry-gradient-haikei.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-bottom: 10px;    
 }
 
 .my-work h2 {
@@ -108,13 +113,28 @@ header nav ul li a {
 }
 
 .project {
+    border: 1px solid var(--primary-color);
     margin-bottom: 10px;
+    flex: 1;
+}
+
+.project img {
     position: relative;
+    max-width: 400px;
+}
+
+.project-1 {
+    flex: 5;
 }
 
 .project-name {
+    padding: 5px;
+    border: 1px solid var(--secondary-color);
     background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     position: absolute;
+    
+   
 }
 
 .project-name h3 {
@@ -137,6 +157,5 @@ header nav ul li a {
 
 /* UTILITY */
 img {
-    max-width: 400px;
     border: 3px solid var(--secondary-color);
 }

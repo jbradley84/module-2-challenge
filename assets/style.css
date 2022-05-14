@@ -62,30 +62,25 @@ header nav ul li a {
 .about-me {
     margin-bottom: 10px;
     background-color: var(--tertiary-color);
+    
 }
 
 .about-me-container {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
+}
+
+.about-me-img {
+    display: flex;
 }
 
 .about-me img {
+    border: 3px solid var(--secondary-color);
     max-width: 400px;
 }
 
-.about-me-text {
-    
-}
-
-.heading {
-    font-size: 32px;
-    padding: 0, 20px, 10px, 20px;
-}
-
-.paragraph {
+.about-me-text p {
     font-size: 20px;
     font-weight: lighter;
     text-align: left;
@@ -106,18 +101,16 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: flex-start;
-     
 }
 
 .project {
-    border: 1px solid var(--primary-color);
     position: relative;
 }
 
 .project img {
     width: 500px;
     margin: 10px;
+    border: 3px solid var(--secondary-color);
 }
 
 .project-1 img {
@@ -148,9 +141,38 @@ header nav ul li a {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.social-text, .social-icon {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.social-heading {
+    flex-grow: 0
+}
+
+.social-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.social-text ul li {
+    list-style: none;
+    font-size: 24px;  
+    padding: 10px 15px;
+    font-size: 24px; 
+}
+
+.social-icon img {
+    width: 75px;
+    border: 25px;
 }
 /* CONTACT ME END */
 
@@ -167,6 +189,6 @@ header nav ul li a {
 /* FOOTER END */
 
 /* UTILITY */
-img {
-    border: 3px solid var(--secondary-color);
+.heading {
+    font-size: 32px;
 }

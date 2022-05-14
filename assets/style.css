@@ -25,7 +25,7 @@ body {
 header {
     padding: 20px 35px;
     margin-bottom: 10px;
-    background-image: url(./images/low-poly-grid-haikei.png);
+    background-image: url(./images/low-poly-grid-haikei-flip.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--secondary-color);
@@ -59,25 +59,26 @@ header nav ul li a {
 
 
 /* ABOUT ME BEGIN */
-.about-me div {
+.about-me {
     margin-bottom: 10px;
     background-color: var(--tertiary-color);
+}
+
+.about-me-container {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .about-me img {
-    flex: 1;
     max-width: 400px;
 }
 
-.about-me div {
-    flex: 1;
+.about-me-text {
+    
 }
-
 
 .heading {
     font-size: 32px;
@@ -94,37 +95,33 @@ header nav ul li a {
 
 /* MY WORK BEGIN */
 .my-work {
-    padding: 15px;
+    padding: 25px;
     background-image: url(./images/blurry-gradient-haikei.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 10px;
 }
 
-.my-work div {
+.my-work-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;    
-}
-
-.my-work h2 {
-    font-size: 32px;
+    justify-content: space-around;
+    align-content: flex-start;
+     
 }
 
 .project {
     border: 1px solid var(--primary-color);
-    margin-bottom: 10px;
-    flex: 1;
+    position: relative;
 }
 
 .project img {
-    position: relative;
-    max-width: 400px;
+    width: 500px;
+    margin: 10px;
 }
 
-.project-1 {
-    flex: 5;
+.project-1 img {
+    width: 700px;
 }
 
 .project-name {
@@ -132,28 +129,42 @@ header nav ul li a {
     border: 1px solid var(--secondary-color);
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
+    font-size: 24px;
     position: absolute;
-    
-   
+    bottom: 0;
+    right: 0;
+    margin: 10px;
 }
 
-.project-name h3 {
-    
+.project-name span {
+    font-weight: lighter;
 }
-
 
 /* MY WORK END */
 
 /* CONTACT ME BEGIN */
 .contact-me {
+    background-color: var(--tertiary-color);
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--primary-color);
     margin-bottom: 10px;
 }
 /* CONTACT ME END */
+
+
+/* FOOTER BEGIN */
+.footer {
+    padding: 20px 35px;
+    margin-bottom: 10px;
+    background-image: url(./images/low-poly-grid-haikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--secondary-color)
+}
+/* FOOTER END */
 
 /* UTILITY */
 img {

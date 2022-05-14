@@ -57,36 +57,33 @@ header nav ul li a {
 }
 /* HEADER/NAV BAR END */
 
-
 /* ABOUT ME BEGIN */
 .about-me {
-    margin-bottom: 10px;
     background-color: var(--tertiary-color);
-    
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
-.about-me-container {
-    padding: 15px;
+.about-me-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    
 }
-
-.about-me-img {
-    display: flex;
-}
-
-.about-me img {
+.about-me-content img {
+    width: 400px;
     border: 3px solid var(--secondary-color);
-    max-width: 400px;
 }
 
-.about-me-text p {
+.about-me-content article {
     font-size: 20px;
     font-weight: lighter;
     text-align: left;
-    margin-bottom: 10px;
+    margin: 0, 0, 10px, 10px;
+    max-width: 65%;
 }
-/* ABOUT ME END */
+/* ABOUT ME END */ 
 
 /* MY WORK BEGIN */
 .my-work {
@@ -188,7 +185,7 @@ header nav ul li a {
 }
 /* FOOTER END */
 
-/* UTILITY */
+/* UTILITIES */
 .heading {
     font-size: 32px;
 }

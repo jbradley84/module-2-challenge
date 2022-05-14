@@ -15,6 +15,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     max-width: 1250px;
     margin: 0 auto;
@@ -76,13 +80,14 @@ header nav ul li a:hover {
 .about-me-content img {
     width: 400px;
     border: 3px solid var(--secondary-color);
+    max-width: 33%;
 }
 
 .about-me-content article {
     font-size: 20px;
     font-weight: lighter;
     text-align: left;
-    margin: 0, 0, 10px, 10px;
+    margin: 0, 0, 10px, 0;
     max-width: 65%;
 }
 /* ABOUT ME END */ 

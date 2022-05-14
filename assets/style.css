@@ -78,7 +78,6 @@ header nav ul li a:hover {
     
 }
 .about-me-content img {
-    width: 400px;
     border: 3px solid var(--secondary-color);
     max-width: 33%;
 }
@@ -107,25 +106,27 @@ header nav ul li a:hover {
     justify-content: space-evenly;
 }
 
-.project {
-    position: relative;
-}
-
 .project img {
-    width: 500px;
     margin: 10px;
     border: 3px solid var(--secondary-color);
+    max-width: 40vw;
+    flex: 0, 0, 30%
 }
 
 .project-1 img {
-    width: 700px;
+    max-width: 60vw;
+    
+}
+
+.project {
+    position: relative;
 }
 
 .project-name {
     padding: 5px;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
-    font-size: 24px;
+    font-size: 2vw;
     position: absolute;
     top: 0;
     left: auto;
@@ -149,7 +150,7 @@ header nav ul li a:hover {
 .contact-me-content ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
@@ -158,7 +159,7 @@ header nav ul li a:hover {
     list-style: none;
     font-size: 24px;  
     padding: 10px 15px;
-    font-size: 24px; 
+    font-size: 20px; 
 }
 
 .contact-me-content ul li a {
@@ -166,8 +167,7 @@ header nav ul li a:hover {
 }
 
 .social-icon img {
-    width: 75px;
-    border: 25px;
+    width: 5vw;
 }
 /* CONTACT ME END */
 
@@ -179,7 +179,12 @@ header nav ul li a:hover {
     background-image: url(./images/low-poly-grid-haikei.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 3vw;
 }
 /* FOOTER END */
 
@@ -189,3 +194,29 @@ body h2 {
     margin-bottom: 10px;
     text-shadow: 2px 2px 10px var(--secondary-color);
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 875px) {
+    
+    header {
+        justify-content: center;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .about-me-content img {
+        border: 3px solid var(--secondary-color);
+        max-width: 100%;
+    }
+   
+
+    
+}
+  

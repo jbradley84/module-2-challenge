@@ -78,21 +78,26 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: stretch;
+    align-content: flex-start; 
 
 }
 
 .about-me-content img {
     border: 3px solid var(--secondary-color);
     max-width: 75vw;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .about-me-content article {
-    font-size: 3.75vw;
+    font-size: 3.65vw;
     font-weight: lighter;
     text-align: justify;
     margin: 10px, 0;
     width: 75vw;
+    line-height: 1.1;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 /* ABOUT ME END */
 
@@ -211,7 +216,7 @@ body h2 {
     }
     
     .about-me-content article {
-        font-size: 2.5vw;
+        font-size:2.25vw;
         text-align: left;
         margin: 10px;
         width: 55vw;

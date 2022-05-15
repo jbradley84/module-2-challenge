@@ -201,16 +201,85 @@ body h2 {
 }
 
 /* MEDIA QUERY FOR SCREENS 575 ONWARDS */
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 575px) {
+    .about-me-content {
+        justify-content: flex-start;
+    }
+
+    .about-me-content img {
+        max-width: 30vw;
+    }
     
+    .about-me-content article {
+        font-size: 2.5vw;
+        text-align: left;
+        margin: 10px;
+        width: 55vw;
+    }
+
+    .project img {
+        max-width: 40vw;
+    }
+    
+    .project-1 img {
+        max-width: 65vw;
+    }
+
+    .project-name {
+        font-size: 2.15vw;    
+    }
+
+    .contact-me-content ul li {
+        font-size: 2.5vw;
+    }
+
+    .social-icon img {
+        width: 7.5vw;
+    }
+
+    .footer h2 {
+        font-size: 3vw;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND LARGER */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 3vw;
+    }
     
+    header nav ul {
+        justify-content: space-between;
+    }
+    
+    header nav ul li a {
+        font-size: 3vw;
+    }
+    body h2 {
+        font-size: 4vw;
+    }
 }
 
 /* MEDIA QUERY FOR SMALL DESKPTOP SCREENS AND LARGER */
-@media screen and (max-width: 875px) {
+@media screen and (min-width: 875px) {
+    header {
+        margin-bottom: 15px;
+    }
+
+    .about-me {
+        margin-bottom: 15px;
+    }
+
+    .my-work {
+        margin-bottom: 15px;
+    }
+
+    .contact-me {
+        margin-bottom: 15px;
+    }
   
 }

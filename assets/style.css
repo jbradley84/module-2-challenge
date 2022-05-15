@@ -22,7 +22,8 @@ html {
 .wrapper {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 /* HEADER/NAV BAR BEGIN */
@@ -39,6 +40,10 @@ header {
     text-shadow: 2px 2px 5px var(--secondary-color);
 }
 
+header h1 {
+    font-size: 1.5vw;
+}
+
 header a {
     text-decoration: none;
 }
@@ -53,7 +58,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 28px;
+    font-size: 1.5vw;
     color: var(--primary-color);
 }
 
@@ -61,6 +66,7 @@ header nav ul li a:hover {
     text-decoration: underline;
     color: var(--secondary-color);
 }
+
 /* HEADER/NAV BAR END */
 
 /* ABOUT ME BEGIN */
@@ -75,21 +81,22 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
-    
+
 }
+
 .about-me-content img {
     border: 3px solid var(--secondary-color);
     max-width: 33%;
 }
 
 .about-me-content article {
-    font-size: 20px;
+    font-size: 1.25vw;
     font-weight: lighter;
     text-align: left;
-    margin: 0, 0, 10px, 0;
+    margin: 10px, 0;
     max-width: 65%;
 }
-/* ABOUT ME END */ 
+/* ABOUT ME END */
 
 /* MY WORK BEGIN */
 .my-work {
@@ -109,13 +116,11 @@ header nav ul li a:hover {
 .project img {
     margin: 10px;
     border: 3px solid var(--secondary-color);
-    max-width: 40vw;
-    flex: 0, 0, 30%
+    max-width: 25vw;
 }
 
 .project-1 img {
-    max-width: 60vw;
-    
+    max-width: 40vw;
 }
 
 .project {
@@ -126,7 +131,7 @@ header nav ul li a:hover {
     padding: 5px;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
-    font-size: 2vw;
+    font-size: 1.25vw;
     position: absolute;
     top: 0;
     left: auto;
@@ -137,13 +142,13 @@ header nav ul li a:hover {
 .project-name span {
     font-weight: lighter;
 }
-
 /* MY WORK END */
+
 
 /* CONTACT ME BEGIN */
 .contact-me {
     background-color: var(--tertiary-color);
-    padding: 15px; 
+    padding: 15px;
     margin-bottom: 10px;
 }
 
@@ -157,9 +162,8 @@ header nav ul li a:hover {
 
 .contact-me-content ul li {
     list-style: none;
-    font-size: 24px;  
+    font-size: 1.25vw;
     padding: 10px 15px;
-    font-size: 20px; 
 }
 
 .contact-me-content ul li a {
@@ -167,7 +171,9 @@ header nav ul li a:hover {
 }
 
 .social-icon img {
-    width: 5vw;
+    border: 1px solid var(--primary-color)
+    border: 25px;
+    width: 3.5vw;
 }
 /* CONTACT ME END */
 
@@ -184,13 +190,14 @@ header nav ul li a:hover {
 }
 
 .footer h2 {
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
+
 /* FOOTER END */
 
 /* UTILITIES */
 body h2 {
-    font-size: 32px;
+    font-size: 1.5vw;
     margin-bottom: 10px;
     text-shadow: 2px 2px 10px var(--secondary-color);
 }
@@ -198,15 +205,13 @@ body h2 {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 875px) {
     
-    header {
-        justify-content: center;
-    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    
-
+    header {
+        justify-content: center;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -215,8 +220,31 @@ body h2 {
         border: 3px solid var(--secondary-color);
         max-width: 100%;
     }
-   
 
+    .about-me-content article {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .project img {
+        margin: 10px;
+        border: 3px solid var(--secondary-color);
+        max-width: 75vw;
+    }
+
+    .project-1 img {
+        max-width: 90vw;
+    }
+
+    .project-name {
+        font-size: 4vw;
+    }
+
+    .social-icon img {
+        width: 12vw;
+    }
     
+    .footer h2 {
+        font-size: 4vw;
+    }
 }
-  

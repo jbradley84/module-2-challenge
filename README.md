@@ -12,7 +12,7 @@
 * CSS
 
 ## Website
-https://jbradley84.github.io/module-2-challenge/
+https://jbradley84.github.io/web-dev-portfolio/
 
 ![ScreenShot](./assets/images/my-portfolio-screenshot.png)
 
